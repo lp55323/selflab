@@ -1,0 +1,15 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /httpd/
+
+hooks:
+  # AfterInstall:
+  #   - location: after_install.sh
+  #     timeout: 60
+
+# hooks:
+  ApplicationStart:
+    - location: app_start.sh
+      timeout: 60
